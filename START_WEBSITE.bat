@@ -1,17 +1,19 @@
 @echo off
-title ElevenLabs Narration Studio - VoiceCraft
+title ElevenLabs Narration Studio - VoiceCraft Live
 color 0B
 echo =======================================================
 echo    🎙️  ElevenLabs AI Narration Studio (VoiceCraft)
 echo =======================================================
 echo.
-echo Starting the web server and backend...
+echo Launching fullstack application (Backend: 5000, Frontend: 5173)...
 echo.
 
 cd /d "%~dp0"
 
-:: Start the server and launch browser
-start "" "http://localhost:5000"
-node server/server.js
+:: Start the browser to frontend
+timeout /t 3 /nobreak >nul
+start "" "http://localhost:5173"
+
+npm run live
 
 pause

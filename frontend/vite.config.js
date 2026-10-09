@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: './', // Enable relative asset paths for flexible folder/subpath loading
   server: {
-    port: 3000,
+    port: 5173,
     proxy: {
       '/api': {
         target: 'http://localhost:5000',

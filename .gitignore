@@ -4,6 +4,8 @@
 
 # Dependencies
 node_modules/
+backend/node_modules/
+frontend/node_modules/
 client/node_modules/
 
 # Logs
@@ -14,8 +16,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build outputs
-# client/dist/ is kept or ignored depending on setup, but typically ignored in git:
-# client/dist/
+frontend/dist/
+dist/
 
 # OS metadata
 .DS_Store
