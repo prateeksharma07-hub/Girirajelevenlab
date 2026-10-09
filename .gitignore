@@ -19,6 +19,9 @@ yarn-error.log*
 frontend/dist/
 dist/
 
+# Netlify
+.netlify/
+
 # OS metadata
 .DS_Store
 Thumbs.db

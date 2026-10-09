@@ -338,10 +338,14 @@ if (fs.existsSync(frontendDistPath)) {
 }
 
 // Start Server
-app.listen(PORT, () => {
-  console.log(`=======================================================`);
-  console.log(`🎙️ Beta AI Narration Studio Backend`);
-  console.log(`⚡ Server running on http://localhost:${PORT}`);
-  console.log(`🔑 ElevenLabs API Key: ${ELEVENLABS_API_KEY ? 'Configured ✅' : 'Missing ❌'}`);
-  console.log(`=======================================================`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`=======================================================`);
+    console.log(`🎙️ Beta AI Narration Studio Backend`);
+    console.log(`⚡ Server running on http://localhost:${PORT}`);
+    console.log(`🔑 ElevenLabs API Key: ${ELEVENLABS_API_KEY ? 'Configured ✅' : 'Missing ❌'}`);
+    console.log(`=======================================================`);
+  });
+}
+
+module.exports = app;
