@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceCraft ElevenLabs Studio - Launcher & Preview</title>
+  <link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #07090E;
+      color: #F8FAFC;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.12) 0px, transparent 50%);
+    }
+    .launcher-card {
+      background: rgba(18, 24, 38, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      backdrop-filter: blur(20px);
+      max-width: 640px;
+      width: 100%;
+      padding: 2.5rem;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.95rem;
+      border-radius: 9999px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #818CF8;
+      font-size: 0.825rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #6366F1, #8B5CF6, #EC4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .desc {
+      color: #94A3B8;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .status-box {
+      background: #090D18;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      padding: 0.4rem 0;
+    }
+    .status-row:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10B981;
+      display: inline-block;
+      box-shadow: 0 0 10px #10B981;
+      margin-right: 6px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #6366F1, #8B5CF6);
+      color: white;
+      text-decoration: none;
+      padding: 1rem 1.75rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+      transition: all 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(99, 102, 241, 0.5);
+    }
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #F8FAFC;
+      text-decoration: none;
+      padding: 0.85rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .info-footer {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #64748B;
+    }
+  </style>
+</head>
+<body>
+  <div class="launcher-card">
+    <div class="badge">
+      <span>🎙️ ElevenLabs AI Narration Platform</span>
+    </div>
+    
+    <h1 class="title">VoiceCraft Studio</h1>
+    <p class="desc">
+      Because modern React web applications use API proxies and modules, opening files directly from Windows folders (<code>file:///</code>) triggers browser security restrictions. Access the site via your local web server below:
+    </p>
+
+    <div class="status-box">
+      <div class="status-row">
+        <span style="color: #94A3B8;">Frontend URL:</span>
+        <span style="font-weight: 600; color: #38BDF8;">http://localhost:3000</span>
+      </div>
+      <div class="status-row">
+        <span style="color: #94A3B8;">Production URL:</span>
+        <span style="font-weight: 600; color: #A78BFA;">http://localhost:5000</span>
+      </div>
+      <div class="status-row">
+        <span style="color: #94A3B8;">Synthesis Service:</span>
+        <span><span class="status-dot"></span>Online & Ready</span>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <a href="http://localhost:3000" class="btn-primary" target="_blank">
+        <span>🚀 Open Studio on http://localhost:3000</span>
+      </a>
+      <a href="http://localhost:5000" class="btn-secondary" target="_blank">
+        <span>⚡ Open Production on http://localhost:5000</span>
+      </a>
+    </div>
+
+    <p class="info-footer">
+      💡 Tip: You can also double-click <b>START_WEBSITE.bat</b> in this folder at any time.
+    </p>
+  </div>
+</body>
+</html>

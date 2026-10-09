@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElevenLabs AI Narration Studio | Turn Words Into Expressive Voice</title>
+    <meta name="description" content="Convert written text into lifelike, natural-sounding AI speech using ElevenLabs API. High fidelity, emotional nuance, multi-language support, and real-time audio playback." />
+    <meta name="theme-color" content="#0B0F17" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      /* Fallback styling if opened directly via file:// */
+      .fallback-box {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        background: #0B0F17;
+        color: #F8FAFC;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+      .fallback-card {
+        background: rgba(18, 24, 38, 0.95);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        border-radius: 20px;
+        padding: 2.5rem;
+        max-width: 580px;
+        text-align: center;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      }
+      .fallback-title {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #6366F1, #8B5CF6, #EC4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .fallback-desc {
+        color: #94A3B8;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+      .fallback-code {
+        background: #06090F;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.75rem 1.25rem;
+        border-radius: 10px;
+        font-family: monospace;
+        color: #38BDF8;
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+        display: inline-block;
+      }
+      .fallback-btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #6366F1, #8B5CF6);
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 0.85rem 1.75rem;
+        border-radius: 9999px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        transition: transform 0.2s;
+      }
+      .fallback-btn:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="fallback-box">
+        <div class="fallback-card">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎙️</div>
+          <h2 class="fallback-title">VoiceCraft ElevenLabs Studio</h2>
+          <p class="fallback-desc">
+            Modern web applications built with React and API proxies need a local web server to run securely (browsers block scripts when opened directly from raw folder files via <code>file:///</code>).
+          </p>
+          <div style="margin-bottom: 1rem; font-size: 0.9rem; color: #E2E8F0; font-weight: 600;">
+            To launch the site:
+          </div>
+          <div class="fallback-code">
+            Double-click <b>START_WEBSITE.bat</b> in the project folder<br/>
+            or run: <code>npm run dev</code>
+          </div>
+          <div>
+            <a href="http://localhost:3000" class="fallback-btn" target="_blank">
+              Open http://localhost:3000 →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
