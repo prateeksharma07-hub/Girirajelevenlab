@@ -119,7 +119,7 @@ export default function AudioPlayerDeck({ audioUrl, voiceName, textSnippet, onNo
     const link = document.createElement('a');
     link.href = audioUrl;
     const cleanVoice = (voiceName || 'voice').toLowerCase().replace(/\s+/g, '-');
-    link.download = `voicecraft-${cleanVoice}-${Date.now()}.mp3`;
+    link.download = `beta-ai-${cleanVoice}-${Date.now()}.mp3`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

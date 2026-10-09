@@ -33,12 +33,12 @@ export default function ContactView({ onNotify }) {
 
   const faqs = [
     {
-      q: 'How does VoiceCraft synthesize speech?',
-      a: 'VoiceCraft uses advanced neural acoustic synthesis engines to generate natural, emotion-infused human speech with realistic breathing, inflections, and pacing.'
+      q: 'How does Beta AI synthesize speech?',
+      a: 'Beta AI uses advanced neural acoustic synthesis engines to generate natural, emotion-infused human speech with realistic breathing, inflections, and pacing.'
     },
     {
       q: 'What is the maximum text length I can synthesize?',
-      a: 'VoiceCraft supports up to 5,000 characters per single narration generation request, which provides roughly 5 to 7 minutes of continuous, natural speech.'
+      a: 'Beta AI supports up to 5,000 characters per single narration generation request, which provides roughly 5 to 7 minutes of continuous, natural speech.'
     },
     {
       q: 'How can I change voice emotion and variability?',
@@ -76,7 +76,7 @@ export default function ContactView({ onNotify }) {
               <CheckCircle size={48} style={{ color: 'var(--accent-emerald)', margin: '0 auto 1rem' }} />
               <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Thank You!</h3>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
-                Your message has been received. We appreciate your feedback to improve VoiceCraft.
+                Your message has been received. We appreciate your feedback to improve Beta AI.
               </p>
               <button
                 className="action-pill-btn primary"

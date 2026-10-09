@@ -1,4 +1,4 @@
-# 🎙️ VoiceCraft — ElevenLabs AI Narration Website
+# 🎙️ Beta AI — Neural Narration Website
 
 A modern, responsive full-stack AI narration website powered by ElevenLabs API.
 

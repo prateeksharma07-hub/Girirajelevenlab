@@ -29,8 +29,8 @@ export default function Navbar({
             <Mic2 size={22} />
           </div>
           <div className="brand-title">
-            <span>VoiceCraft</span>
-            <span className="brand-badge">ElevenLabs AI</span>
+            <span>Beta AI</span>
+            <span className="brand-badge">Voice Studio</span>
           </div>
         </div>
 

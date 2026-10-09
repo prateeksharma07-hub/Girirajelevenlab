@@ -1,8 +1,8 @@
 @echo off
-title ElevenLabs Narration Studio - VoiceCraft Live
+title Beta AI Narration Studio - Live
 color 0B
 echo =======================================================
-echo    🎙️  ElevenLabs AI Narration Studio (VoiceCraft)
+echo    🎙️  Beta AI — Neural Narration Studio
 echo =======================================================
 echo.
 echo Launching fullstack application (Backend: 5000, Frontend: 5173)...

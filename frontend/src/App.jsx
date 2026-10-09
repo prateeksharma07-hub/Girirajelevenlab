@@ -29,7 +29,7 @@ const PRESET_TEMPLATES = [
   {
     label: 'Tech Product Launch',
     icon: Tv,
-    text: 'Meet the future of digital audio. Engineered with state-of-the-art neural architecture, VoiceCraft turns pure text into cinematic, emotion-rich performance in milliseconds.',
+    text: 'Meet the future of digital audio. Engineered with state-of-the-art neural architecture, Beta AI turns pure text into cinematic, emotion-rich performance in milliseconds.',
     stability: 0.45,
     similarity_boost: 0.85
   },
@@ -58,7 +58,7 @@ export default function App() {
 
   // Text state
   const [text, setText] = useState(
-    'Welcome to VoiceCraft AI Studio. Type any text here, choose your preferred narrator voice, and experience the power of ElevenLabs neural voice synthesis.'
+    'Welcome to Beta AI Studio. Type any text here, choose your preferred narrator voice, and experience the power of ElevenLabs neural voice synthesis.'
   );
 
   // ElevenLabs state
@@ -465,7 +465,7 @@ export default function App() {
       <footer className="app-footer">
         <div className="footer-content">
           <div>
-            <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>VoiceCraft Studio</span>
+            <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Beta AI Studio</span>
             <span style={{ color: 'var(--text-secondary)' }}> • Neural Speech Platform</span>
           </div>
 

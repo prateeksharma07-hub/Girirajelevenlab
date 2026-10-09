@@ -37,7 +37,7 @@ export default function HistoryView({
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `voicecraft-history-${Date.now()}.json`;
+    a.download = `beta-ai-history-${Date.now()}.json`;
     a.click();
     URL.revokeObjectURL(url);
     if (onNotify) onNotify('History exported to JSON successfully!', 'success');

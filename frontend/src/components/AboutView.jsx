@@ -22,10 +22,10 @@ export default function AboutView() {
           <span>Next-Gen Speech Synthesis</span>
         </div>
         <h1 style={{ fontSize: '2.75rem', fontWeight: 800, marginBottom: '1rem' }}>
-          About <span className="hero-gradient">VoiceCraft Studio</span>
+          About <span className="hero-gradient">Beta AI</span>
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: 1.6 }}>
-          VoiceCraft is a high-fidelity AI narration platform designed to bridge written language and human emotional expression through official ElevenLabs generative voice models.
+          Beta AI is a high-fidelity AI narration platform designed to bridge written language and human emotional expression through official ElevenLabs generative voice models.
         </p>
       </div>
 

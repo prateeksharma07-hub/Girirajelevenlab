@@ -1,8 +1,8 @@
 @echo off
-title ElevenLabs Narration Studio - Live Mode
+title Beta AI Studio - Live Development Mode
 color 0A
 echo =======================================================
-echo    🎙️  ElevenLabs AI Studio - Live Development Mode
+echo    🎙️  Beta AI Studio - Live Development Mode
 echo =======================================================
 echo.
 echo Starting backend (Port 5000) and frontend (Port 5173)...
