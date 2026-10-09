@@ -78,21 +78,8 @@ export default function Navbar({
           </button>
         </nav>
 
-        {/* Right Actions: Quota, Theme Toggle */}
+        {/* Right Actions: Theme Toggle */}
         <div className="header-actions">
-          {subscription ? (
-            <div className="quota-pill" title={`${subscription.characterCount} / ${subscription.characterLimit} used`}>
-              <span className="quota-indicator" />
-              <span>
-                {subscription.charactersRemaining?.toLocaleString()} chars left
-              </span>
-            </div>
-          ) : (
-            <div className="quota-pill" title="Connecting to ElevenLabs API...">
-              <Activity size={14} className={backendStatus ? 'text-emerald-400' : 'animate-spin'} />
-              <span>{backendStatus ? 'Connected' : 'Connecting...'}</span>
-            </div>
-          )}
 
           <button 
             className="icon-button" 

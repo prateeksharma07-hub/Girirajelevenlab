@@ -120,25 +120,7 @@ export default function AboutView() {
         </div>
       </div>
 
-      {/* Architectural Flow Diagram */}
-      <div className="glass-card">
-        <h2 style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '1rem' }}>
-          System Architecture
-        </h2>
-        <div style={{ background: 'rgba(0,0,0,0.25)', padding: '1.5rem', borderRadius: 'var(--radius-md)', fontFamily: 'var(--font-mono)', fontSize: '0.85rem', lineHeight: 1.8 }}>
-          <div>[User Browser / React Studio]</div>
-          <div style={{ color: 'var(--accent-indigo)' }}>&nbsp;&nbsp;│── POST /api/narrate (text, voiceId, settings)</div>
-          <div style={{ color: 'var(--accent-indigo)' }}>&nbsp;&nbsp;▼</div>
-          <div>[Node.js Express Server : Port 5000]</div>
-          <div style={{ color: 'var(--text-muted)' }}>&nbsp;&nbsp;│── Validates input & executes authenticated cloud synthesis</div>
-          <div style={{ color: 'var(--accent-purple)' }}>&nbsp;&nbsp;│── POST https://api.elevenlabs.io/v1/text-to-speech/{'{voice_id}'}</div>
-          <div style={{ color: 'var(--accent-purple)' }}>&nbsp;&nbsp;▼</div>
-          <div>[ElevenLabs Neural AI Engine]</div>
-          <div style={{ color: 'var(--accent-emerald)' }}>&nbsp;&nbsp;│── Synthesizes high-fidelity audio/mpeg stream (44.1kHz, 128kbps)</div>
-          <div style={{ color: 'var(--accent-emerald)' }}>&nbsp;&nbsp;▼</div>
-          <div>[Client Waveform Audio Deck + Browser Blob Storage]</div>
-        </div>
-      </div>
+
     </div>
   );
 }
